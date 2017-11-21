@@ -35,7 +35,6 @@ public class MailClient
         //creamos una nueva variable local llamada Respuesta, que almacenara un mensaje de respuesta, 
         //en ella almacenaremos los datos del remitente y la respuesta automatica
         //este nuevo mensaje de respuesta se va almacenar en el servidor
-        //HE DECIDIDO LLAMAR AL METODO PRINT DE ITEM PARA VISUALIZAR ESA RESPUESTA
         if(item != null){
             String destino = item.getFrom();
             String asunto = "RE: " + item.getSubject();
