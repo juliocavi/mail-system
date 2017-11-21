@@ -29,6 +29,7 @@ public class MailItem
         this.to = to;
         this.subject = subject;
         this.message = message;
+
     }
 
     /**
@@ -46,7 +47,7 @@ public class MailItem
     {
         return to;
     }
-    
+
     /**
      * @return The text of the subject.
      */
@@ -54,7 +55,7 @@ public class MailItem
     {
         return subject;
     }
-    
+
     /**
      * @return The text of the message.
      */
@@ -62,15 +63,18 @@ public class MailItem
     {
         return message;
     }
-    
+
     /**
      * Print this mail message to the text terminal.
      */
     public void print()
     {
-        System.out.println("From: " + from);
-        System.out.println("To: " + to);
-        System.out.println("Subject: " + subject);
-        System.out.println("Message: " + message);
+        {
+            System.out.println("From: " + from);
+            System.out.println("To: " + to);
+            System.out.println("Subject: " + subject);
+            System.out.println("Message: " + message);
+        }
     }
+
 }
