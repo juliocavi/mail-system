@@ -43,7 +43,6 @@ public class MailClient
             + ".\nMensaje de " + item.getFrom() + ": " + item.getMessage();
             MailItem Respuesta = new MailItem(user, destino, asunto, mensaje);
             server.post(Respuesta);
-            item.print();
         }
         //si no hay nuevos mensajes, me sacas un mensaje por pantalla avisando de ello
         else{
